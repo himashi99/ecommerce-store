@@ -26,7 +26,17 @@ export default class Modal extends Component {
                       <h5>Item added to cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
-                      <h5 className="text-muted">price: $ {price}</h5>''
+                      <h5 className="text-muted">price: $ {price}</h5>
+                      <Link to="./">
+                        <ButtonContainer onClick={() => closeModal()}>
+                          Store
+                        </ButtonContainer>
+                      </Link>
+                      <Link to="/cart">
+                        <ButtonContainer cart onClick={() => closeModal()}>
+                          Go to Cart
+                        </ButtonContainer>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -51,5 +61,6 @@ const ModalContainer = styled.div`
   justify-content: center;
   #modal {
     background: var(--mainWhite);
+    padding: 40px;
   }
 `;
