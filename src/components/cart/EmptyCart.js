@@ -7,7 +7,9 @@ export default function EmptyCart() {
       <div className="row">
         <div className="col-10 mx-auto text-center text-title">
           <h2>Womp womp...your cart is currently empty.</h2>
-          <img src={emptyCart} alt="store" />
+          <div class="d-flex justify-content-center">
+            <img src={emptyCart} alt="store" />
+          </div>
         </div>
       </div>
     </div>
