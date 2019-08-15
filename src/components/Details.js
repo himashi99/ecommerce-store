@@ -46,7 +46,7 @@ export default class Details extends Component {
                   </p>
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
-                  <div>
+                  <div class="text-center">
                     <Link to="/">
                       <ButtonContainer>Back to Products</ButtonContainer>
                     </Link>
@@ -58,7 +58,7 @@ export default class Details extends Component {
                         value.openModal(id);
                       }}
                     >
-                      {inCart ? "inCart" : "Add to Cart"}
+                      {inCart ? "in Cart" : "Add to Cart"}
                     </ButtonContainer>
                   </div>
                 </div>
